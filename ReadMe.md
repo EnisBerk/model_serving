@@ -33,7 +33,7 @@ docker run --rm --runtime=nvidia --shm-size=1g --ulimit memlock=-1 --ulimit stac
 curl localhost:8000/api/status
 
 
-python src/clients/python/image_client.py  -m resnet50_netdef -s INCEPTION qa/images/mug.jpg
+python src/clients/python/image_client.py  -m resnet50_netdef -s INCEPTION images/mug.jpg
 #client code
 https://github.com/NVIDIA/tensorrt-inference-server/blob/master/src/clients/python/image_client.py
 
