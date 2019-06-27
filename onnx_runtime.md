@@ -18,5 +18,5 @@ gradient jobs create \
 --container awsdeeplearningteam/mxnet-model-server:latest-gpu \
 --ports 8080:8080,8081:8081 \
 --command 'bash serv_onnx.sh' \
- --workspace './'
+ --workspaceUrl 'https://github.com/EnisBerk/model_serving.git'
 ```

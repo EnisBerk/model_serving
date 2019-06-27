@@ -32,6 +32,7 @@ docker run --rm --runtime=nvidia --shm-size=1g --ulimit memlock=-1 --ulimit stac
 # get status
 curl localhost:8000/api/status
 
+docker run -it --rm --net=host tensorrtserver_client:19.05
 
 python src/clients/python/image_client.py  -m resnet50_netdef -s INCEPTION images/mug.jpg
 #client code
